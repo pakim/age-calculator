@@ -32,5 +32,5 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: []()
-- Live Site URL: []()
+- Solution URL: [https://github.com/pakim/age-calculator/](https://github.com/pakim/age-calculator/)
+- Live Site URL: [https://pakim.github.io/age-calculator/](https://pakim.github.io/age-calculator/)
