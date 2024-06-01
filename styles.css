@@ -1,0 +1,235 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: hsl(0, 0%, 94%);
+}
+
+.container {
+  background-color: hsl(0, 0%, 100%);
+  width: 800px;
+  padding: 50px;
+  border-radius: 20px 20px 27% 20px;
+}
+
+.inputs {
+  display: flex;
+  gap: 30px;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+}
+
+.input label {
+  font-size: 13px;
+  font-weight: 600;
+  color: hsl(0, 1%, 44%);
+  letter-spacing: 3px;
+}
+
+.input label.red {
+  color: hsl(0, 100%, 67%);
+}
+
+.input input {
+  padding: 10px 20px;
+  font-size: 32px;
+  font-weight: 700;
+  color: hsl(0, 0%, 8%);
+  width: 150px;
+  border-radius: 5px;
+  outline: none;
+  border: 2px solid hsl(0, 0%, 94%);
+  margin: 5px 0;
+  caret-color: hsl(259, 100%, 65%);
+  cursor: pointer;
+}
+
+.input input.red {
+  border: 2px solid hsl(0, 100%, 67%);
+}
+
+.input input::-webkit-inner-spin-button,
+.input input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+.input input:hover,
+.input input:focus {
+  border: 2px solid hsl(259, 100%, 65%);
+}
+
+.button {
+  display: flex;
+  align-items: center;
+}
+
+.button div {
+  width: 100%;
+}
+
+.button hr {
+  border: 1px solid hsl(0, 0%, 94%);
+}
+
+.button button {
+  padding: 20px;
+  border-radius: 50%;
+  background-color: hsl(259, 100%, 65%);
+  border: none;
+  cursor: pointer;
+}
+
+.button button:hover {
+  background-color: hsl(0, 0%, 8%);
+}
+
+.result div {
+  font-weight: 900;
+  font-size: 100px;
+  font-style: italic;
+  line-height: 105px;
+  color: hsl(0, 0%, 8%);
+  display: flex;
+}
+
+.result span {
+  letter-spacing: 15px;
+  color: hsl(259, 100%, 65%);
+}
+
+.error {
+  font-size: 13px;
+  font-style: italic;
+  color: hsl(0, 100%, 67%);
+}
+
+.error.hidden {
+  display: none;
+}
+
+span.animate {
+  animation: move 0.5s linear;
+}
+
+@keyframes move {
+  0% {
+    transform: rotateX(0);
+    opacity: 1;
+  }
+  50% {
+    color: hsl(0, 0%, 8%);
+  }
+  100% {
+    transform: rotateX(360deg);
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    width: 350px;
+    padding: 40px 25px;
+  }
+
+  .inputs {
+    gap: 0;
+    justify-content: space-between;
+  }
+
+  .input input {
+    width: 90px;
+    font-size: 20px;
+    padding: 10px 13px;
+  }
+
+  .button {
+    position: relative;
+    width: 100%;
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+
+  .svg-icon {
+    width: 30px;
+    height: 24px;
+  }
+
+  .svg-icon g {
+    stroke-width: 4;
+  }
+
+  .button button {
+    position: absolute;
+    left: calc(150px - 35px);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .result div {
+    font-size: 50px;
+    font-style: italic;
+    line-height: 55px;
+    color: hsl(0, 0%, 8%);
+    display: flex;
+    gap: 10px;
+  }
+
+  .result span {
+    letter-spacing: 0;
+  }
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("./assets/fonts/Poppins-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("./assets/fonts/Poppins-Italic.ttf");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("./assets/fonts/Poppins-Bold.ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("./assets/fonts/Poppins-BoldItalic.ttf");
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("./assets/fonts/Poppins-ExtraBold.ttf");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("./assets/fonts/Poppins-ExtraBoldItalic.ttf");
+  font-weight: 800;
+  font-style: italic;
+}
